@@ -37,7 +37,7 @@ const displayEntries = () => {
   //let details = document.getElementById("user-entries");
   //details.innerHTML = table;
 };
-
+displayEntries();
 const saveUserForm = (event) => {
   event.preventDefault();
   let name = document.getElementById("name").value;
