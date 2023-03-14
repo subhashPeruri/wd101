@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+table{
+    width: 600px;
+    box-shadow: -1px 12px 12px -6px rgba(0, 0, 0, 0.5);
+
+}
+table,td,th{
+    padding: 20px;
+    border: 1px burlywood;
+    border-collapse: collapse;
+    text-align: center;
+    cursor: pointer;
+}
+td{
+    font-size: 23px;
+}
+th{
+    background-color: whitesmoke;
+    color: black;
+    
+}
+tr:nth-child(odd){
+    background-color:antiquewhite;
+}
+tr:nth-child(odd):hover{
+    background-color: greenyellow;
+    color:whitesmoke;
+    transform: scale(2);
+    transition: transform 300ms ease-in;
+}
