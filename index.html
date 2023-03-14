@@ -1,0 +1,38 @@
+<html>
+<body class="right"><link rel="stylesheet" href="index.css">
+ <head>
+   Registration Form
+ </head>
+
+<form id="user-form">
+    <label for="name">Name</label>
+    <input required type="text" id="name" name="name"><br>
+     
+    <label for="email">Email</label>
+    <input required type="email" id="email" name="email"><br>
+     
+    <label for="password">Password</label>
+    <input required type="password" id="password" name="password"><br>
+     
+    <label for="dob">Date of Birth</label>
+    <input min="3/14/1967" max="3/14/2004" required type="date" id="dob" name="dob"><br>
+     
+    <input type="checkbox" id="acceptTerms" name="acceptTerms">
+    <label for="acceptedTerms">Accept Terms & Conditions</label><br>
+
+    <button type="submit">Submit</button><br>
+     </form>
+<script src="indexform.js"></script>
+<table id="user-entries">
+    <h1>Entries</h1>
+    <tr>
+        <th>Name</th>
+       <th>Password</th>
+       <th>DOB</th>
+       <th>AcceptedTerms</th>
+    </tr>
+    <tr></tr>
+    <tbody class="acess"></tbody>
+</table>
+</body>
+</html>
