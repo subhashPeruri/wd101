@@ -37,7 +37,7 @@ const displayEntries = () => {
   //let details = document.getElementById("user-entries");
   //details.innerHTML = table;
 };
-displayEntries();
+
 const saveUserForm = (event) => {
   event.preventDefault();
   let name = document.getElementById("name").value;
@@ -57,6 +57,7 @@ const saveUserForm = (event) => {
   localStorage.setItem("user-entries", JSON.stringify(userEntries));
   displayEntries();
 };
+displayEntries();
 userForm.addEventListener("submit", saveUserForm);
 displayEntries();
 function ager(today, dob) {
